@@ -9,4 +9,7 @@ zerops:
     deploy:
       - ./dotnet/app/~
   run:
-      start: dotnet ./dotnet.dll
+    start: dotnet ./dotnet.dll
+    ports:
+      - port: 8080
+        httpSupport: true  
